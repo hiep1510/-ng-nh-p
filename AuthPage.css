@@ -1,0 +1,236 @@
+/* Container chính */
+.auth-container {
+  margin: 0 auto; /* Keep it centered */
+  padding: 0; /* Remove padding */
+  background: none; /* Remove the background */
+  border-radius: 0; /* Remove rounded corners */
+  box-shadow: none; /* Remove shadow */
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+}
+
+
+/* Tiêu đề */
+.auth-container h1 {
+  font-size: 20px; /* Tăng kích thước font */
+  color: #222; /* Màu chữ đậm hơn */
+  font-weight: 700; /* Tăng độ đậm */
+  margin-bottom: 25px;
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Tăng khoảng cách giữa các hàng */
+}
+
+/* Row của form */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px; /* Tăng khoảng cách ngang giữa các cột */
+  font-weight: 700;
+}
+
+/* Nhóm form */
+.form-group {
+  width: 50%;
+  text-align: left;
+}
+
+.form-group.half {
+  width: 70%; /* Mỗi cột chiếm 48% */
+}
+
+/* Label */
+.form-group label {
+  display: block;
+  font-size: 15px; /* Tăng kích thước font */
+  margin-bottom: 20px; /* Tăng khoảng cách giữa label và input */
+  color: #444; /* Màu tối hơn một chút */
+}
+
+/* Input */
+.form-group input {
+  width: 70%;
+  padding: 14px; /* Tăng padding */
+  font-size: 15px; /* Tăng kích thước font */
+  border: 1px solid #ddd; /* Border nhẹ hơn */
+  border-radius: 8px; /* Tăng bo góc */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Thêm bóng bên trong */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #28a746; /* Đổi màu border khi focus */
+  outline: none;
+}
+
+/* Nút hành động */
+.submit-button {
+  width: 12%;
+  padding: 18px; /* Tăng chiều cao nút */
+  font-size: 13px; /* Tăng kích thước font */
+  color: #f4f9fa;
+  background: linear-gradient(to right, #efdf4b, #cbeb4b); /* Hiệu ứng gradient */
+  border: none;
+  border-radius: 10px; /* Tăng bo góc */
+  cursor: pointer;
+  font-weight: 7000;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34); /* Đổi gradient khi hover */
+}
+
+/* Nút chuyển đổi */
+.toggle-button {
+  margin-top: 18px;
+  font-size: 10px; /* Tăng kích thước font */
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #0056b3; /* Đổi màu chữ khi hover */
+  text-decoration: underline;
+}
+
+/* Phần đăng nhập qua mạng xã hội */
+.social-login {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-login p {
+  display :flex;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px; /* Tăng khoảng cách giữa các nút mạng xã hội */
+  width : 30px;
+}
+
+.facebook-button,
+.google-button {
+  flex: 1;
+  padding: 10px; /* Tăng chiều cao nút */
+  font-size: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Tăng bo góc */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.facebook-button {
+  background-color: #4267B2;
+}
+
+.facebook-button:hover {
+  background-color: #365899;
+}
+
+.google-button {
+  background-color: #DB4437;
+}
+
+.google-button:hover {
+  background-color: #c23321;
+}
+
+/* Điều chỉnh phần quên mật khẩu */
+.forgot-password {
+  position: absolute; /* Đặt nó ra ngoài dòng chảy bình thường của form */
+  top: 60px; /* Khoảng cách từ trên cùng của form */
+  right: 200px; /* Khoảng cách từ bên phải của form */
+}
+
+.forgot-password button {
+  font-size: 10px; /* Tăng kích thước nút */
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.forgot-password button:hover {
+  color: #0056b3; /* Đổi màu chữ khi hover */
+  text-decoration: underline;
+}
+
+.auth-fom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 1.5;
+}
+
+.fom-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  line-height: 1.5;
+}
+
+.fom-group {
+  width: 60%;
+  height: auto;
+  text-align: left;
+  gap: 25px; 
+  line-height: 1.5;
+}
+/* Nhóm form */
+.fom-group input {
+  width: 150%; /* Chiều rộng full để chiếm toàn bộ không gian */
+  padding: 16px; /* Tăng padding để trường input rộng hơn */
+  font-size: 18px; /* Tăng kích thước font */
+  height: 50px; /* Tăng chiều cao của trường input */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+/* Đảm bảo các trường input được căn chỉnh đẹp */
+.fom-group input:focus {
+  border-color: #28a746; /* Đổi màu border khi focus */
+  outline: none;
+}
+
+
+.subit-button {
+  width: 50%;
+  height:30%;
+  padding: 10px;
+  font-size: 10px;
+  color: #fff;
+  background: linear-gradient(to right, #efdf4b, #cbeb4b);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #218838, #1e7e34);
+}
